@@ -5,7 +5,7 @@ def register():
 
 def login(data : dict):
     token = t.encode_token(data)
-    return token
+    return {"token" : token, "status" : "ok"}
 
 def logout():
     return {"status" : "ok"}
